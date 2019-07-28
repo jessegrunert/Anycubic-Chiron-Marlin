@@ -9,9 +9,7 @@ Since this is a port from the V1.3 firmware which anycubic built, not all featur
 ### Tested Working
 - Filmament sensor
 - G29 auto leveling (I added a bit more probe clearance as I didn't like the default values)
-
-### Tested NOT Working
-- Mesh editing via LCD screen
+- Mesh editing via LCD screen (make sure you run M1001 to set auto-leveling mode)
 
 ### NOT Tested
 - Resume after power failure
