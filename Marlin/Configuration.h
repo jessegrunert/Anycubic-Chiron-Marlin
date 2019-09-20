@@ -358,12 +358,12 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 265 //275
-#define HEATER_1_MAXTEMP 265 //275
-#define HEATER_2_MAXTEMP 265 //275
-#define HEATER_3_MAXTEMP 265 //275
-#define HEATER_4_MAXTEMP 265 //275
-#define BED_MAXTEMP 106 //150
+#define HEATER_0_MAXTEMP 300 //275
+#define HEATER_1_MAXTEMP 300 //275
+#define HEATER_2_MAXTEMP 300 //275
+#define HEATER_3_MAXTEMP 300 //275
+#define HEATER_4_MAXTEMP 300 //275
+#define BED_MAXTEMP 120 //150
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -623,7 +623,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 100, 100, 20, 80 }  //{ 300, 300, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 200, 200, 20, 80 }  //{ 300, 300, 5, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -666,7 +666,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
